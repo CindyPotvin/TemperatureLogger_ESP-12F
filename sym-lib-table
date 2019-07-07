@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name ChickmaticPhase3-rescue)(type Legacy)(uri ${KIPRJMOD}/ChickmaticPhase3-rescue.lib)(options "")(descr ""))
+  (lib (name ChickmaticPhase3_bug-rescue)(type Legacy)(uri ${KIPRJMOD}/ChickmaticPhase3_bug-rescue.lib)(options "")(descr ""))
+  (lib (name TemperatureLogger_ESP-12F-rescue)(type Legacy)(uri ${KIPRJMOD}/TemperatureLogger_ESP-12F-rescue.lib)(options "")(descr ""))
+)
