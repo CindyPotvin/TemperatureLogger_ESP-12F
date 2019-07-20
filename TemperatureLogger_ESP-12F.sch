@@ -18,30 +18,30 @@ Text Label 4775 3475 0    60   ~ 0
 SCL
 Text Label 6450 2575 0    60   ~ 0
 SDA
-Text Label 1675 1850 0    60   ~ 0
+Text Label 2275 1700 0    60   ~ 0
 5V
-Text Label 3075 1850 0    60   ~ 0
+Text Label 3675 1700 0    60   ~ 0
 3.3V
 $Comp
 L TemperatureLogger_ESP-12F-rescue:C_Small-ChickmaticPhase3-rescue C1
 U 1 1 59F51789
-P 3100 1575
-F 0 "C1" H 3110 1645 50  0000 L CNN
-F 1 "1uF" H 3110 1495 50  0000 L CNN
-F 2 "SamacSys_Parts:FG18X7R1H334KRT00" H 3100 1575 50  0001 C CNN
-F 3 "" H 3100 1575 50  0001 C CNN
-	1    3100 1575
+P 3700 1425
+F 0 "C1" H 3710 1495 50  0000 L CNN
+F 1 "1uF" H 3710 1345 50  0000 L CNN
+F 2 "SamacSys_Parts:FG18X7R1H334KRT00" H 3700 1425 50  0001 C CNN
+F 3 "" H 3700 1425 50  0001 C CNN
+	1    3700 1425
 	-1   0    0    1   
 $EndComp
 $Comp
 L TemperatureLogger_ESP-12F-rescue:C_Small-ChickmaticPhase3-rescue C2
 U 1 1 59F5186E
-P 1950 1550
-F 0 "C2" H 1960 1620 50  0000 L CNN
-F 1 "1uF" H 1960 1470 50  0000 L CNN
-F 2 "SamacSys_Parts:FG18X7R1H334KRT00" H 1950 1550 50  0001 C CNN
-F 3 "" H 1950 1550 50  0001 C CNN
-	1    1950 1550
+P 2550 1400
+F 0 "C2" H 2560 1470 50  0000 L CNN
+F 1 "1uF" H 2560 1320 50  0000 L CNN
+F 2 "SamacSys_Parts:FG18X7R1H334KRT00" H 2550 1400 50  0001 C CNN
+F 3 "" H 2550 1400 50  0001 C CNN
+	1    2550 1400
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -125,12 +125,12 @@ Wire Wire Line
 Wire Wire Line
 	6350 2575 6900 2575
 Wire Wire Line
-	1950 1850 1950 1650
-Connection ~ 3100 1850
+	2550 1700 2550 1500
+Connection ~ 3700 1700
 Wire Wire Line
-	1950 1300 1950 1450
+	2550 1150 2550 1300
 Wire Wire Line
-	3100 1475 3100 1300
+	3700 1325 3700 1150
 Wire Wire Line
 	5750 3675 5750 3800
 Wire Wire Line
@@ -154,134 +154,113 @@ Wire Wire Line
 Wire Wire Line
 	4300 2175 4400 2175
 Wire Wire Line
-	3100 1675 3100 1850
+	3700 1525 3700 1700
 Wire Wire Line
-	3100 1850 3300 1850
+	3700 1700 3900 1700
 Wire Wire Line
-	2425 1300 2425 1175
+	3025 1150 3025 1025
 Wire Wire Line
 	6175 1775 6175 1575
-Connection ~ 1950 1850
+Connection ~ 2550 1700
 $Comp
 L TemperatureLogger_ESP-12F-rescue:Earth-ChickmaticPhase3-rescue #PWR013
 U 1 1 5AC12B62
-P 1675 2050
-F 0 "#PWR013" H 1675 1800 50  0001 C CNN
-F 1 "Earth" H 1675 1900 50  0001 C CNN
-F 2 "" H 1675 2050 50  0001 C CNN
-F 3 "" H 1675 2050 50  0001 C CNN
-	1    1675 2050
+P 2275 1900
+F 0 "#PWR013" H 2275 1650 50  0001 C CNN
+F 1 "Earth" H 2275 1750 50  0001 C CNN
+F 2 "" H 2275 1900 50  0001 C CNN
+F 3 "" H 2275 1900 50  0001 C CNN
+	1    2275 1900
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	1450 2050 1675 2050
-NoConn ~ 1450 1950
+	2050 1900 2275 1900
+NoConn ~ 2050 1800
 $Comp
 L TemperatureLogger_ESP-12F-rescue:Barrel_Jack-ChickmaticPhase3-rescue J3
 U 1 1 5AC12525
-P 1150 1950
-F 0 "J3" H 1150 2160 50  0000 C CNN
-F 1 "Barrel_Jack" H 1150 1775 50  0000 C CNN
-F 2 "Connector_BarrelJack:BarrelJack_CUI_PJ-102AH_Horizontal" H 1200 1910 50  0001 C CNN
-F 3 "" H 1200 1910 50  0001 C CNN
-	1    1150 1950
+P 1750 1800
+F 0 "J3" H 1750 2010 50  0000 C CNN
+F 1 "Barrel_Jack" H 1750 1625 50  0000 C CNN
+F 2 "Connector_BarrelJack:BarrelJack_CUI_PJ-102AH_Horizontal" H 1800 1760 50  0001 C CNN
+F 3 "" H 1800 1760 50  0001 C CNN
+	1    1750 1800
 	1    0    0    -1  
 $EndComp
-Text Label 9625 3275 0    50   ~ 0
-SDA
-$Comp
-L Connector:Conn_01x02_Female J2
-U 1 1 5C99E4F7
-P 9825 3175
-F 0 "J2" H 9853 3151 50  0000 L CNN
-F 1 "Additional I2C device" H 9853 3060 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 9825 3175 50  0001 C CNN
-F 3 "~" H 9825 3175 50  0001 C CNN
-	1    9825 3175
-	1    0    0    -1  
-$EndComp
-Text Label 9625 3175 0    50   ~ 0
-SCL
 Wire Wire Line
 	6175 1775 6350 1775
 Wire Wire Line
-	1450 1850 1525 1850
+	2050 1700 2125 1700
 Wire Wire Line
 	4400 1975 4175 1975
-Wire Wire Line
-	9775 1600 9450 1600
 $Comp
 L Regulator_Linear:MCP1700-3302E_TO92 U2
 U 1 1 5CFD2FF7
-P 2550 1850
-F 0 "U2" V 2596 1745 50  0000 R CNN
-F 1 "MCP1700-3302E_TO92" H 2505 1745 50  0000 R CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 2550 1650 50  0001 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001826D.pdf" H 2550 1850 50  0001 C CNN
-	1    2550 1850
+P 3150 1700
+F 0 "U2" V 3196 1595 50  0000 R CNN
+F 1 "MCP1700-3302E_TO92" H 3105 1595 50  0000 R CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 3150 1500 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001826D.pdf" H 3150 1700 50  0001 C CNN
+	1    3150 1700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2850 1850 3100 1850
+	3450 1700 3700 1700
 Wire Wire Line
-	1950 1850 2250 1850
+	2550 1700 2850 1700
 $Comp
 L power:PWR_FLAG #FLG0102
 U 1 1 5CFDDFE6
-P 1525 1850
-F 0 "#FLG0102" H 1525 1925 50  0001 C CNN
-F 1 "PWR_FLAG" H 1525 2023 50  0000 C CNN
-F 2 "" H 1525 1850 50  0001 C CNN
-F 3 "~" H 1525 1850 50  0001 C CNN
-	1    1525 1850
+P 2125 1700
+F 0 "#FLG0102" H 2125 1775 50  0001 C CNN
+F 1 "PWR_FLAG" H 2125 1873 50  0000 C CNN
+F 2 "" H 2125 1700 50  0001 C CNN
+F 3 "~" H 2125 1700 50  0001 C CNN
+	1    2125 1700
 	1    0    0    -1  
 $EndComp
-Connection ~ 1525 1850
+Connection ~ 2125 1700
 Wire Wire Line
-	1525 1850 1950 1850
+	2125 1700 2550 1700
 Text Label 5750 3750 0    50   ~ 0
 GND
-Text Label 9550 1600 0    50   ~ 0
-GND
-Text Label 2600 1300 0    50   ~ 0
+Text Label 3200 1150 0    50   ~ 0
 GND
 Wire Wire Line
-	2550 1550 2550 1300
-Text Label 2325 3250 0    50   ~ 0
+	3150 1400 3150 1150
+Text Label 2925 3100 0    50   ~ 0
 GND
-NoConn ~ 2250 3825
+NoConn ~ 2850 3675
 $Comp
 L TemperatureLogger_ESP-12F-rescue:GY-B11(BMP-280)-ChickmaticPhase3-rescue U6
 U 1 1 5A4937CD
-P 1850 3575
-F 0 "U6" H 1775 3775 60  0000 C CNN
-F 1 "GY-B11(BME-280)" H 1875 3925 60  0000 C CNN
-F 2 "ChickmaticPhase3-Simplify:GY-BME280-3.3" H 1875 3925 60  0001 C CNN
-F 3 "" H 1875 3925 60  0001 C CNN
-	1    1850 3575
+P 2450 3425
+F 0 "U6" H 2375 3625 60  0000 C CNN
+F 1 "GY-B11(BMP-280)" H 2475 3775 60  0000 C CNN
+F 2 "TemperatureLogger_ESP-12F:GY-BME280-3.3" H 2475 3775 60  0001 C CNN
+F 3 "" H 2475 3775 60  0001 C CNN
+	1    2450 3425
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	2250 3075 2600 3075
+	2850 2925 3200 2925
 Wire Wire Line
-	2250 3250 2550 3250
+	2850 3100 3150 3100
 Wire Wire Line
-	2250 3450 2600 3450
+	2850 3300 3200 3300
 Wire Wire Line
-	2250 3650 2600 3650
+	2850 3500 3200 3500
 Wire Wire Line
-	2250 4050 2575 4050
-Text Notes 2725 4050 0    60   ~ 0
-Cut trace to GND on PCB?
-Text Label 2300 3075 0    60   ~ 0
+	2850 3900 3175 3900
+Text Label 2900 2925 0    60   ~ 0
 3.3V
-Text Label 2300 4050 0    60   ~ 0
+Text Label 2900 3900 0    60   ~ 0
 3.3V
-Text Label 2325 3450 0    60   ~ 0
+Text Label 2925 3300 0    60   ~ 0
 SCL
-Text Label 2325 3650 0    60   ~ 0
+Text Label 2925 3500 0    60   ~ 0
 SDA
-Connection ~ 2550 1300
+Connection ~ 3150 1150
 Text Label 6175 1125 1    50   ~ 0
 GND
 Wire Wire Line
@@ -292,14 +271,6 @@ Wire Wire Line
 	6350 2475 6675 2475
 Wire Wire Line
 	6875 2675 6350 2675
-Wire Wire Line
-	9775 1700 9400 1700
-Wire Wire Line
-	9775 1800 9400 1800
-Text Label 9600 1700 0    50   ~ 0
-RXD
-Text Label 9600 1800 0    50   ~ 0
-TXD
 Text Label 6450 2475 0    50   ~ 0
 TXD
 Text Label 6450 2675 0    50   ~ 0
@@ -359,9 +330,9 @@ Text Label 6525 3500 0    50   ~ 0
 WAKE
 Text Label 4950 2075 0    50   ~ 0
 WAKE
-Text Label 1500 2050 0    50   ~ 0
+Text Label 2100 1900 0    50   ~ 0
 GND
-Text Label 2125 1300 0    50   ~ 0
+Text Label 2725 1150 0    50   ~ 0
 GND
 $Comp
 L SamacSys_Parts:LTL2R3KGD-EM LED1
@@ -400,16 +371,16 @@ Wire Wire Line
 $Comp
 L power:GNDPWR #PWR0101
 U 1 1 5D06E10F
-P 2425 1150
-F 0 "#PWR0101" H 2425 950 50  0001 C CNN
-F 1 "GNDPWR" H 2430 995 50  0000 C CNN
-F 2 "" H 2425 1100 50  0001 C CNN
-F 3 "" H 2425 1100 50  0001 C CNN
-	1    2425 1150
+P 3025 1000
+F 0 "#PWR0101" H 3025 800 50  0001 C CNN
+F 1 "GNDPWR" H 3030 845 50  0000 C CNN
+F 2 "" H 3025 950 50  0001 C CNN
+F 3 "" H 3025 950 50  0001 C CNN
+	1    3025 1000
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	2550 1300 3100 1300
+	3150 1150 3700 1150
 $Comp
 L power:GNDPWR #PWR0102
 U 1 1 5D07131B
@@ -424,12 +395,12 @@ $EndComp
 $Comp
 L power:GNDPWR #PWR0103
 U 1 1 5D074E98
-P 2550 3250
-F 0 "#PWR0103" H 2550 3050 50  0001 C CNN
-F 1 "GNDPWR" V 2555 3142 50  0000 R CNN
-F 2 "" H 2550 3200 50  0001 C CNN
-F 3 "" H 2550 3200 50  0001 C CNN
-	1    2550 3250
+P 3150 3100
+F 0 "#PWR0103" H 3150 2900 50  0001 C CNN
+F 1 "GNDPWR" V 3155 2992 50  0000 R CNN
+F 2 "" H 3150 3050 50  0001 C CNN
+F 3 "" H 3150 3050 50  0001 C CNN
+	1    3150 3100
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -453,17 +424,6 @@ F 2 "" H 8300 2925 50  0001 C CNN
 F 3 "" H 8300 2925 50  0001 C CNN
 	1    8300 2975
 	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GNDPWR #PWR0106
-U 1 1 5D077BEE
-P 9450 1600
-F 0 "#PWR0106" H 9450 1400 50  0001 C CNN
-F 1 "GNDPWR" V 9454 1491 50  0000 R CNN
-F 2 "" H 9450 1550 50  0001 C CNN
-F 3 "" H 9450 1550 50  0001 C CNN
-	1    9450 1600
-	0    1    1    0   
 $EndComp
 $Comp
 L power:GNDPWR #PWR0107
@@ -498,53 +458,91 @@ F 3 "http://wiki.ai-thinker.com/_media/esp8266/esp8266_series_modules_user_manua
 	1    5750 2975
 	1    0    0    -1  
 $EndComp
-Connection ~ 2425 1300
+Connection ~ 3025 1150
 Wire Wire Line
-	2425 1300 1950 1300
+	3025 1150 2550 1150
 Wire Wire Line
-	2425 1300 2550 1300
+	3025 1150 3150 1150
 $Comp
 L power:PWR_FLAG #FLG0101
 U 1 1 5D082A4B
-P 2425 1175
-F 0 "#FLG0101" H 2425 1250 50  0001 C CNN
-F 1 "PWR_FLAG" V 2425 1303 50  0000 L CNN
-F 2 "" H 2425 1175 50  0001 C CNN
-F 3 "~" H 2425 1175 50  0001 C CNN
-	1    2425 1175
+P 3025 1025
+F 0 "#FLG0101" H 3025 1100 50  0001 C CNN
+F 1 "PWR_FLAG" V 3025 1153 50  0000 L CNN
+F 2 "" H 3025 1025 50  0001 C CNN
+F 3 "~" H 3025 1025 50  0001 C CNN
+	1    3025 1025
 	0    1    1    0   
 $EndComp
-Connection ~ 2425 1175
+Connection ~ 3025 1025
 Wire Wire Line
-	2425 1175 2425 1150
-$Comp
-L Connector_Generic:Conn_01x03 J1
-U 1 1 5D08B684
-P 9925 2575
-F 0 "J1" H 9843 2250 50  0000 C CNN
-F 1 "Power for additional devices" H 9843 2341 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 9925 2575 50  0001 C CNN
-F 3 "~" H 9925 2575 50  0001 C CNN
-	1    9925 2575
-	1    0    0    -1  
-$EndComp
-Text Label 9725 2575 2    50   ~ 0
-GND
-Text Label 9725 2475 2    50   ~ 0
-5V
-Text Label 9725 2675 2    50   ~ 0
-3.3V
+	3025 1025 3025 1000
+Text Notes 9225 1875 0    50   ~ 0
+GND -> Black\nRXD -> White\nTXD -> Yellow
 $Comp
 L Connector_Generic:Conn_01x03 J4
 U 1 1 5D090557
-P 9975 1700
-F 0 "J4" H 10055 1742 50  0000 L CNN
-F 1 "FTDI_Cable" H 10055 1651 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 9975 1700 50  0001 C CNN
-F 3 "~" H 9975 1700 50  0001 C CNN
-	1    9975 1700
+P 9350 1375
+F 0 "J4" H 9430 1417 50  0000 L CNN
+F 1 "FTDI_Cable" H 9430 1326 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 9350 1375 50  0001 C CNN
+F 3 "~" H 9350 1375 50  0001 C CNN
+	1    9350 1375
 	1    0    0    -1  
 $EndComp
-Text Notes 9850 2200 0    50   ~ 0
-GND -> Black\nRXD -> White\nTXD -> Yellow
+Text Label 9100 2350 2    50   ~ 0
+3.3V
+Text Label 9100 2150 2    50   ~ 0
+5V
+Text Label 9100 2250 2    50   ~ 0
+GND
+$Comp
+L Connector_Generic:Conn_01x03 J1
+U 1 1 5D08B684
+P 9300 2250
+F 0 "J1" H 9218 1925 50  0000 C CNN
+F 1 "Power for additional devices" H 9218 2016 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 9300 2250 50  0001 C CNN
+F 3 "~" H 9300 2250 50  0001 C CNN
+	1    9300 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDPWR #PWR0106
+U 1 1 5D077BEE
+P 8825 1275
+F 0 "#PWR0106" H 8825 1075 50  0001 C CNN
+F 1 "GNDPWR" V 8829 1166 50  0000 R CNN
+F 2 "" H 8825 1225 50  0001 C CNN
+F 3 "" H 8825 1225 50  0001 C CNN
+	1    8825 1275
+	0    1    1    0   
+$EndComp
+Text Label 8975 1475 0    50   ~ 0
+TXD
+Text Label 8975 1375 0    50   ~ 0
+RXD
+Wire Wire Line
+	9150 1475 8775 1475
+Wire Wire Line
+	9150 1375 8775 1375
+Text Label 8925 1275 0    50   ~ 0
+GND
+Wire Wire Line
+	9150 1275 8825 1275
+Text Label 9000 2850 0    50   ~ 0
+SCL
+$Comp
+L Connector:Conn_01x02_Female J2
+U 1 1 5C99E4F7
+P 9200 2850
+F 0 "J2" H 9228 2826 50  0000 L CNN
+F 1 "Additional I2C device" H 9228 2735 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 9200 2850 50  0001 C CNN
+F 3 "~" H 9200 2850 50  0001 C CNN
+	1    9200 2850
+	1    0    0    -1  
+$EndComp
+Text Label 9000 2950 0    50   ~ 0
+SDA
 $EndSCHEMATC
