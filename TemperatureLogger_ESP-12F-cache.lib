@@ -99,30 +99,21 @@ X VO 3 300 0 100 L 50 50 1 1 w
 ENDDRAW
 ENDDEF
 #
-# SamacSys_Parts_LTL2R3KGD-EM
+# Switch_SW_SPDT
 #
-DEF SamacSys_Parts_LTL2R3KGD-EM LED 0 30 Y Y 1 F N
-F0 "LED" 500 350 50 H V L BNN
-F1 "SamacSys_Parts_LTL2R3KGD-EM" 500 250 50 H V L BNN
-F2 "LTL2R3KGDEM" 500 150 50 H I L BNN
-F3 "https://componentsearchengine.com/Datasheets/1/LTL2R3KGD-EM.pdf" 500 50 50 H I L BNN
-F4 "Standard LEDs - Through Hole Thru-Hole Lamp 5mm Grn 571nm 30Deg" 500 -50 50 H I L BNN "Description"
-F5 "8.95" 500 -150 50 H I L BNN "Height"
-F6 "859-LTL2R3KGD-EM" 500 -250 50 H I L BNN "Mouser Part Number"
-F7 "https://www.mouser.com/Search/Refine.aspx?Keyword=859-LTL2R3KGD-EM" 500 -350 50 H I L BNN "Mouser Price/Stock"
-F8 "Lite-On" 500 -450 50 H I L BNN "Manufacturer_Name"
-F9 "LTL2R3KGD-EM" 500 -550 50 H I L BNN "Manufacturer_Part_Number"
+DEF Switch_SW_SPDT SW 0 0 Y N 1 F N
+F0 "SW" 0 170 50 H V C CNN
+F1 "Switch_SW_SPDT" 0 -200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
 DRAW
-P 2 0 1 6 100 0 200 0 N
-P 2 0 1 6 200 100 200 -100 N
-P 2 0 1 6 250 100 150 200 N
-P 2 0 1 6 350 100 250 200 N
-P 2 0 1 6 400 0 500 0 N
-P 4 0 1 6 200 0 400 100 400 -100 200 0 N
-P 4 0 1 10 210 170 180 140 150 200 210 170 F
-P 4 0 1 10 310 170 280 140 250 200 310 170 F
-X K 1 0 0 100 R 50 50 0 0 B
-X A 2 600 0 100 L 50 50 0 0 B
+C -80 0 20 0 0 0 N
+C 80 -100 20 0 0 0 N
+C 80 100 20 0 1 0 N
+P 2 0 1 0 -60 10 65 90 N
+X A 1 200 100 100 L 50 50 1 1 P
+X B 2 -200 0 100 R 50 50 1 1 P
+X C 3 200 -100 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
@@ -167,7 +158,7 @@ ENDDEF
 #
 # TemperatureLogger_ESP-12F-rescue_Earth-ChickmaticPhase3-rescue
 #
-DEF ~TemperatureLogger_ESP-12F-rescue_Earth-ChickmaticPhase3-rescue #PWR 0 0 Y Y 1 F P
+DEF TemperatureLogger_ESP-12F-rescue_Earth-ChickmaticPhase3-rescue #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -250 50 H I C CNN
 F1 "TemperatureLogger_ESP-12F-rescue_Earth-ChickmaticPhase3-rescue" 0 -150 50 H I C CNN
 F2 "" 0 0 50 H I C CNN
@@ -197,6 +188,33 @@ X SCL 3 125 -400 200 U 50 50 1 1 I
 X SDA 4 -75 -400 200 U 50 50 1 1 I
 X CSB 5 -250 -400 200 U 50 50 1 1 I
 X SDO 6 -475 -400 200 U 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# TemperatureLogger_ESP-12F-rescue_LTL2R3KGD-EM-SamacSys_Parts
+#
+DEF TemperatureLogger_ESP-12F-rescue_LTL2R3KGD-EM-SamacSys_Parts LED 0 30 Y Y 1 F N
+F0 "LED" 500 350 50 H V L BNN
+F1 "TemperatureLogger_ESP-12F-rescue_LTL2R3KGD-EM-SamacSys_Parts" 500 250 50 H V L BNN
+F2 "LTL2R3KGDEM" 500 150 50 H I L BNN
+F3 "https://componentsearchengine.com/Datasheets/1/LTL2R3KGD-EM.pdf" 500 50 50 H I L BNN
+F4 "Standard LEDs - Through Hole Thru-Hole Lamp 5mm Grn 571nm 30Deg" 500 -50 50 H I L BNN "Description"
+F5 "8.95" 500 -150 50 H I L BNN "Height"
+F6 "859-LTL2R3KGD-EM" 500 -250 50 H I L BNN "Mouser Part Number"
+F7 "https://www.mouser.com/Search/Refine.aspx?Keyword=859-LTL2R3KGD-EM" 500 -350 50 H I L BNN "Mouser Price/Stock"
+F8 "Lite-On" 500 -450 50 H I L BNN "Manufacturer_Name"
+F9 "LTL2R3KGD-EM" 500 -550 50 H I L BNN "Manufacturer_Part_Number"
+DRAW
+P 2 0 1 6 100 0 200 0 N
+P 2 0 1 6 200 100 200 -100 N
+P 2 0 1 6 250 100 150 200 N
+P 2 0 1 6 350 100 250 200 N
+P 2 0 1 6 400 0 500 0 N
+P 4 0 1 6 200 0 400 100 400 -100 200 0 N
+P 4 0 1 10 210 170 180 140 150 200 210 170 F
+P 4 0 1 10 310 170 280 140 250 200 310 170 F
+X K 1 0 0 100 R 50 50 0 0 B
+X A 2 600 0 100 L 50 50 0 0 B
 ENDDRAW
 ENDDEF
 #
@@ -233,22 +251,6 @@ P 2 0 1 0 -60 10 65 90 N
 X A 1 200 100 100 L 50 50 1 1 P
 X B 2 -200 0 100 R 50 50 1 1 P
 X C 3 200 -100 100 L 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# TemperatureLogger_ESP-12F-rescue_SW_SPST-ChickmaticPhase3-rescue
-#
-DEF TemperatureLogger_ESP-12F-rescue_SW_SPST-ChickmaticPhase3-rescue SW 0 0 Y N 1 F N
-F0 "SW" 0 125 50 H V C CNN
-F1 "TemperatureLogger_ESP-12F-rescue_SW_SPST-ChickmaticPhase3-rescue" 0 -100 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-C -80 0 20 0 0 0 N
-C 80 0 20 0 0 0 N
-P 2 0 0 0 -60 10 60 70 N
-X A 1 -200 0 100 R 50 50 1 1 P
-X B 2 200 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
