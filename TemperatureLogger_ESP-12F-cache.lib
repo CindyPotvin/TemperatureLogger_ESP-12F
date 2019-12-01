@@ -158,7 +158,7 @@ ENDDEF
 #
 # TemperatureLogger_ESP-12F-rescue_Earth-ChickmaticPhase3-rescue
 #
-DEF TemperatureLogger_ESP-12F-rescue_Earth-ChickmaticPhase3-rescue #PWR 0 0 Y Y 1 F P
+DEF ~TemperatureLogger_ESP-12F-rescue_Earth-ChickmaticPhase3-rescue #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -250 50 H I C CNN
 F1 "TemperatureLogger_ESP-12F-rescue_Earth-ChickmaticPhase3-rescue" 0 -150 50 H I C CNN
 F2 "" 0 0 50 H I C CNN

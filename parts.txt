@@ -4,22 +4,18 @@ https://www.aliexpress.com/item/10-pieces-59-26-12mm-szomk-hot-sales-humidity-se
 Enclosure circuit
 https://www.aliexpress.com/item/32982177498.html?spm=2114.search0104.3.47.595117524N33Lb&ws_ab_test=searchweb0_0%2Csearchweb201602_5_10065_10130_10068_10890_10547_319_10546_317_10548_10696_453_10084_454_10083_10618_10307_537_536_10059_10884_10887_321_322_10103%2Csearchweb201603_52%2CppcSwitch_0&algo_expid=a25cae30-b257-4748-abe9-416d733160cc-7&algo_pvid=a25cae30-b257-4748-abe9-416d733160cc&transAbTest=ae803_4
 
-C1 0.33uf
-FG18X7R1H334KRT00
-https://www.mouser.ca/ProductDetail/TDK/FG18X7R1H334KRT00?qs=sGAEpiMZZMt3KoXD5rJ2N3%2FB4IwRhPfODsnOBjSpG5xzTr7HiBEsFA%3D%3D
-
-C2 .1uf
-K104K15X7RF53H5
-https://www.mouser.ca/ProductDetail/Vishay-BC-Components/K104K15X7RF53H5?qs=sGAEpiMZZMt3KoXD5rJ2N6ZV8M58kCCv3HG9VpeXcfU%3D
+C1 1uf
+C2 1uf
+FG18X7R1E105KRT00
+https://www.mouser.ca/ProductDetail/810-FG18X7R1E105KRT0
 
 J2 I2C header
 M20-9990246 
 https://www.mouser.ca/ProductDetail/Harwin/M20-9990246?qs=sGAEpiMZZMs%252BGHln7q6pmzlZUuX%2F53qjvUNYk5vvx%252Bg%3D
 
-
-J3 Barrel header
-PJ-102AH 
-https://www.mouser.ca/ProductDetail/CUI/PJ-102AH?qs=%2Fha2pyFadujL9IDMLPasT6v%2FBKJpKFw%2FH%252BBktHlBXmQ%3D
+J3 Power
+M20-9990246  
+https://www.mouser.ca/ProductDetail/Harwin/M20-9990246?qs=sGAEpiMZZMs%252BGHln7q6pmzlZUuX%2F53qjvUNYk5vvx%252Bg%3D
 
 R1 2,7k
 R2 2,7k
@@ -30,11 +26,12 @@ R3 10k
 R4 10k
 R5 10k
 R6 10k
-
 MF1/4LCT52R332J 
 https://www.mouser.ca/ProductDetail/KOA-Speer/MF1-4LCT52R332J?qs=sGAEpiMZZMu61qfTUdNhG%2FDQawzJ6c7P7n%2FPSZsKgVo%3D
 
-R7 330
+R7 100
+MF1/4LCT52R101G 
+https://www.mouser.ca/ProductDetail/KOA-Speer/MF1-4LCT52R101G?qs=sGAEpiMZZMu61qfTUdNhG%2FDQawzJ6c7P2xjsfezavMU%3D
 
 SW1 Switch to reset
 B3F-1000 
@@ -45,19 +42,20 @@ EG1218
 https://www.mouser.ca/ProductDetail/E-Switch/EG1218?qs=sGAEpiMZZMtHXLepoqNyVZDOWY7elTCOE4MJ3sXRkSs%3D
 
 U1 Power regulator 3.3V
-MCP1700-3302E/TO 
-https://www.mouser.ca/ProductDetail/Microchip-Technology/MCP1700-3302E-TO?qs=%2Fha2pyFadugiZdBrKtQplXSCgnWaOztu6Ex3VC2tQvA3bmUZxNddWw%3D%3D
+MCP1702-3302E/TO 
+https://www.mouser.ca/ProductDetail/Microchip-Technology/MCP1702-3302E-TO?qs=%2Fha2pyFadujT8UC6Ac%252BWEGepBHxuPKxrQcikZcBDtv3cjG6FV9QuYw%3D%3D
 
 U3 ESP8266 ESP-12F
 https://www.ebay.ca/itm/ESP-12F-ESP8266-Remote-Serial-WIFI-Transceiver-Wireless-Adapter-Plate-Module/264051129457?hash=item3d7aac7c71:m:mGS9Q-uKNCYl793gSkyvhvw
 
 U4 FTDI Cable socket
 J1 Power additionnal devices
-https://www.mouser.ca/ProductDetail/855-M20-9990246
+M20-9770346
+https://www.mouser.ca/ProductDetail/Harwin/M20-9770346?qs=%2Fha2pyFaduhF0xjSTgJg%252BhHtAe85Ymdf6eFgt%252BK1tYM8z%252BtUdOoNqw%3D%3D
 
-U6 BMP-280 and socket
+U6 BMP-280 and 4 pin header M20-9770446 
 https://www.ebay.ca/itm/BMP280-3-3V-Pressure-Sensor-Module-High-Precision-Atmospheric-Arduino-BMP180/201511252133?epid=1655551950&hash=item2eeb01b0a5&enc=AQADAAAC8FjVrDbVsZ8oH%2F8PNHtt9VX4%2Fw7FZcmMuqsX8uaFEduViB8iq3UTvkYocL7pYA2y7i26hpJjNnGcjIejUxxQfdKK609yvo4KSBIHxtWrQexzT1q4BOrotndZM2YM0xa8u2xSMNGl%2FTFQy31JzWr23lGyW7ZD0kT0lXd8DFpWwe%2BfN21%2BpHLuL%2Bzi6wRe6LP8bQbZy6SsBWr3miRwagpz6R%2BekINDnbyz6%2BBTwW2Sx%2BeDbnyjbzM7klmn6bKhXNTkUSwl5ENptMJ64JthJrHjTzXpQCufaSsAVZFx0ACxlp%2FO%2BYRX%2FzkXmQO7Ghqxhaipy4uLYqWdbXrkw53fwnJJ3UvAmVmhNtlb4XE0c3xSZOkTEOPN2SXuKjS3%2F52eY4b6e2FzgVBimpUwIZP5unZEyRcIYD0Ufjj45DNwEkAu%2Ba0QQCizyLM2o6AR2NrBZcuzQHT9OWEijmYMM3b9fRIJ3FiqPAbbiu6t%2B9vfVzeZQe5PpNkyPhNjZnqdqZue94pRDVX5fQkil7AMLDS8lLLLVSCdMvW91Y2vl%2BQvuAodRJ4lef3%2FcP72f7WpL2csb%2F2TGym%2FtBUiWRCOvm9J5%2BIuxUfRpuEGZPbzmwj6aVGEwI%2BMHD3NS0TKE%2BrkFyvH5cv3Yu5yGvaHFKRcKAyE8a4Ow4sp9OOiDdMFSefPF0NyKbtzBnwguLIcjIXXIc3hZGlKRU2E8g6xmzCyhBL35mPKii%2FnoHMkUQtsi1XtQ5OyP8y3xiiJG0rrngZijAERE7PyuxpxXr2BrgwCmSECADlsbfJqWrJk0wE1howXixjylzKDq0U3GAjroTu9bpwweHhTuc7XfpaOiUvsVMK9gc9o%2FR9V4KZqO6cOqPuvYOFFnOi0Mbboua%2BxyowFq9ZjY4D9DotJgtw5ZTV5%2FbRo3S30LHLXIs5f21RJKhtt5GdKglmr5iYLFvFyWZBtWOxYdIGdNMjLZcA7WhL9mzmGKLGtvACIRctAIHO5trcC%2BBOGkuXH&checksum=20151125213386cf5b22161b4825ab80b68aa8619df1
-https://www.mouser.ca/ProductDetail/992-6FX1L-254MM
+https://www.mouser.ca/ProductDetail/855-M20-9770446
 
 LED1 LED LiteOn LTL2R3KGD-EM + led mounting hardware spacer
 https://www.mouser.ca/ProductDetail/Lite-On/LTL2R3KGD-EM?qs=sGAEpiMZZMtmwHDZQCdlqY3QuPVQdrfivxVgVo2hFbg%3D

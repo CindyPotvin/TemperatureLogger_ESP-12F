@@ -181,9 +181,9 @@ L Regulator_Linear:MCP1700-3302E_TO92 U2
 U 1 1 5CFD2FF7
 P 3150 1700
 F 0 "U2" V 3196 1595 50  0000 R CNN
-F 1 "MCP1700-3302E_TO92" H 3105 1595 50  0000 R CNN
+F 1 "MCP1702-3302E_TO92" H 3105 1595 50  0000 R CNN
 F 2 "Package_TO_SOT_THT:TO-92_Inline" H 3150 1500 50  0001 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001826D.pdf" H 3150 1700 50  0001 C CNN
+F 3 "https://www.mouser.ca/datasheet/2/268/22008a-53656.pdf" H 3150 1700 50  0001 C CNN
 	1    3150 1700
 	1    0    0    -1  
 $EndComp
