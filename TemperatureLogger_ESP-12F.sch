@@ -14,7 +14,7 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Label 4775 3475 0    60   ~ 0
+Text Label 6725 3175 2    60   ~ 0
 SCL
 Text Label 6450 2575 0    60   ~ 0
 SDA
@@ -44,19 +44,6 @@ F 3 "" H 2550 1400 50  0001 C CNN
 	1    2550 1400
 	-1   0    0    1   
 $EndComp
-$Comp
-L TemperatureLogger_ESP-12F-rescue:R-ChickmaticPhase3-rescue R1
-U 1 1 59F5313A
-P 4425 3475
-F 0 "R1" V 4505 3475 50  0000 C CNN
-F 1 "2k7" V 4425 3475 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 4355 3475 50  0001 C CNN
-F 3 "" H 4425 3475 50  0001 C CNN
-	1    4425 3475
-	0    1    1    0   
-$EndComp
-Text Label 4000 3475 0    60   ~ 0
-3.3V
 $Comp
 L TemperatureLogger_ESP-12F-rescue:R-ChickmaticPhase3-rescue R2
 U 1 1 59F53387
@@ -110,8 +97,6 @@ F 3 "" H 4600 2075 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	4575 3475 5150 3475
-Wire Wire Line
 	6350 2575 6900 2575
 Wire Wire Line
 	2550 1700 2550 1500
@@ -122,8 +107,6 @@ Wire Wire Line
 	3700 1325 3700 1150
 Wire Wire Line
 	5750 3675 5750 3800
-Wire Wire Line
-	4275 3475 3900 3475
 Wire Wire Line
 	7200 2575 7425 2575
 Wire Wire Line
@@ -267,10 +250,6 @@ F 3 "" H 6950 3275 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6350 3275 6800 3275
-Wire Wire Line
-	7100 3275 7375 3275
-Text Label 7150 3275 0    50   ~ 0
-GND
 $Comp
 L TemperatureLogger_ESP-12F-rescue:R-ChickmaticPhase3-rescue R5
 U 1 1 5D00A075
@@ -286,7 +265,7 @@ Text Label 6250 1100 1    60   ~ 0
 3.3V
 Wire Wire Line
 	6250 1125 6250 875 
-NoConn ~ 6350 3175
+NoConn ~ 5150 3475
 NoConn ~ 6350 3075
 NoConn ~ 6350 2875
 NoConn ~ 6350 2775
@@ -400,17 +379,6 @@ F 3 "" H 8300 2925 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GNDPWR #PWR0107
-U 1 1 5D078B85
-P 7375 3275
-F 0 "#PWR0107" H 7375 3075 50  0001 C CNN
-F 1 "GNDPWR" V 7380 3167 50  0000 R CNN
-F 2 "" H 7375 3225 50  0001 C CNN
-F 3 "" H 7375 3225 50  0001 C CNN
-	1    7375 3275
-	0    -1   -1   0   
-$EndComp
-$Comp
 L power:GNDPWR #PWR0108
 U 1 1 5D07B0E8
 P 6450 1325
@@ -420,17 +388,6 @@ F 2 "" H 6450 1275 50  0001 C CNN
 F 3 "" H 6450 1275 50  0001 C CNN
 	1    6450 1325
 	-1   0    0    1   
-$EndComp
-$Comp
-L RF_Module:ESP-12F U1
-U 1 1 5CFE3763
-P 5750 2975
-F 0 "U1" H 5750 3956 50  0000 C CNN
-F 1 "ESP-12F" H 5750 3865 50  0000 C CNN
-F 2 "RF_Module:ESP-12E" H 5750 2975 50  0001 C CNN
-F 3 "http://wiki.ai-thinker.com/_media/esp8266/esp8266_series_modules_user_manual_v1.1.pdf" H 5400 3075 50  0001 C CNN
-	1    5750 2975
-	1    0    0    -1  
 $EndComp
 $Comp
 L power:PWR_FLAG #FLG0101
@@ -499,20 +456,20 @@ Text Label 8925 1275 0    50   ~ 0
 GND
 Wire Wire Line
 	9150 1275 8825 1275
-Text Label 9000 2850 0    50   ~ 0
+Text Label 8700 3350 0    50   ~ 0
 SCL
 $Comp
 L Connector:Conn_01x02_Female J2
 U 1 1 5C99E4F7
-P 9200 2850
-F 0 "J2" H 9228 2826 50  0000 L CNN
-F 1 "Additional I2C device" H 9228 2735 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 9200 2850 50  0001 C CNN
-F 3 "~" H 9200 2850 50  0001 C CNN
-	1    9200 2850
+P 8900 3350
+F 0 "J2" H 8928 3326 50  0000 L CNN
+F 1 "Additional I2C device" H 8928 3235 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8900 3350 50  0001 C CNN
+F 3 "~" H 8900 3350 50  0001 C CNN
+	1    8900 3350
 	1    0    0    -1  
 $EndComp
-Text Label 9000 2950 0    50   ~ 0
+Text Label 8700 3450 0    50   ~ 0
 SDA
 $Comp
 L Switch:SW_SPDT SW2
@@ -534,4 +491,47 @@ Wire Wire Line
 Wire Wire Line
 	2550 1150 3150 1150
 NoConn ~ 2850 3900
+Wire Wire Line
+	7100 3275 7375 3275
+$Comp
+L power:GNDPWR #PWR0107
+U 1 1 5D078B85
+P 7375 3275
+F 0 "#PWR0107" H 7375 3075 50  0001 C CNN
+F 1 "GNDPWR" V 7380 3167 50  0000 R CNN
+F 2 "" H 7375 3225 50  0001 C CNN
+F 3 "" H 7375 3225 50  0001 C CNN
+	1    7375 3275
+	0    -1   -1   0   
+$EndComp
+Text Label 7150 3275 0    50   ~ 0
+GND
+Wire Wire Line
+	7100 3175 7475 3175
+Text Label 7375 3175 2    60   ~ 0
+3.3V
+$Comp
+L TemperatureLogger_ESP-12F-rescue:R-ChickmaticPhase3-rescue R1
+U 1 1 59F5313A
+P 6950 3175
+F 0 "R1" V 7030 3175 50  0000 C CNN
+F 1 "2k7" V 6950 3175 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 6880 3175 50  0001 C CNN
+F 3 "" H 6950 3175 50  0001 C CNN
+	1    6950 3175
+	0    -1   -1   0   
+$EndComp
+$Comp
+L RF_Module:ESP-12F U1
+U 1 1 5CFE3763
+P 5750 2975
+F 0 "U1" H 5750 3956 50  0000 C CNN
+F 1 "ESP-12F" H 5750 3865 50  0000 C CNN
+F 2 "RF_Module:ESP-12E" H 5750 2975 50  0001 C CNN
+F 3 "http://wiki.ai-thinker.com/_media/esp8266/esp8266_series_modules_user_manual_v1.1.pdf" H 5400 3075 50  0001 C CNN
+	1    5750 2975
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 3175 6350 3175
 $EndSCHEMATC
